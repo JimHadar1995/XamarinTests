@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TestVideoRecord"
+             xmlns:controls="clr-namespace:XLabs.Forms.Controls;assembly=XLabs.Forms"
+             x:Class="TestVideoRecord.MainPage">
+    <ScrollView Grid.Row="1" Grid.Column="0" VerticalOptions="FillAndExpand" Orientation="Vertical" HorizontalOptions="FillAndExpand">
+        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="Start" Spacing="20" Padding="0, 10, 0, 0">
+
+            <Button Text="Снять видео" HorizontalOptions="FillAndExpand" TextColor="#FFFFFF" BackgroundColor="#135de4" Clicked="btnTakeVideo_Clicked"></Button>
+            <Label x:Name="LabelResult"></Label>
+                
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>

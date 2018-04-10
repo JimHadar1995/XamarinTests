@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TestVideo1"
+             xmlns:forms="clr-namespace:Plugin.MediaManager.Forms;assembly=Plugin.MediaManager.Forms"
+             x:Class="TestVideo1.MainPage">
+
+    <StackLayout>
+        <StackLayout Orientation="Horizontal" Padding="20">
+            <forms:VideoView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" AspectMode="AspectFill" />
+            <Button Text="play" Clicked="Button_Clicked"></Button>
+        </StackLayout>
+        <StackLayout IsClippedToBounds="True" 
+                     IsVisible="{Binding IsBusy}" Padding="12">
+
+            <ActivityIndicator IsRunning="{Binding IsBusy}" Color ="Red"/>
+
+            <Label Text="Loading..." TextColor="Red" HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand"/>
+
+        </StackLayout>
+        
+    </StackLayout>
+
+</ContentPage>
