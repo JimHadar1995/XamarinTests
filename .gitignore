@@ -1,0 +1,35 @@
+#ignore thumbnails created by windows
+Thumbs.db
+
+# Build results
+**/bin/*
+**/obj/*
+**/obj/.cache
+
+# Visual Studio 2017 cache/options directory
+.vs/
+**/.vs/*
+
+# DNX
+project.lock.json
+
+# Visual Studio cache files
+# files ending in .cache can be ignored
+*.[Cc]ache
+# but keep track of directories ending in .cache
+#!*.[Cc]ache/
+
+# Backup & report files from converting an old project file
+# to a newer Visual Studio version.
+Backup*/
+**/UpgradeLog*.XML
+UpgradeLog*.htm
+
+# Ignore NuGet Packages
+#*.nupkg uncomment if necessary
+# Ignore the packages folder. Uncomment if necessary
+#**/packages/*
+
+# SQL Server files
+*.mdf
+*.ldf
